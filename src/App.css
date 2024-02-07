@@ -1,0 +1,69 @@
+.app__background{
+   height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.advice__api{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background: rgba(24, 216, 33, 0.5);
+ border-radius: 10px;
+ text-align: center;
+ width:60rem;
+ height: 20rem;
+ h1{
+  font-size: 50px;
+  font-weight: 300;
+  color: blue;
+  letter-spacing: 1px;
+ }
+ button{
+ margin-top: 10px;
+ padding: 1rem 4rem;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 20px;
+ background-color: rgb(214, 0, 125);
+ border: none;
+ border-radius: 20px;
+ color: white;
+ letter-spacing: 1px;
+ cursor: pointer;
+ }
+
+}
+button:hover{
+  background-color: white;
+  color:  rgb(214, 0, 125);
+  transition: all 1s;
+}
+@media(max-width:619px){
+  .advice__api{
+    width: 50rem;
+  }
+  h1{
+    font-size: 30px;
+   }
+   button{
+    padding: 1rem 3rem;
+    }
+}
+@media(max-width:450px){
+  .advice__api{
+   width: 30rem;
+    h1{
+      font-size: 35px;
+  
+     }
+     button{
+      padding: 1rem 2rem;
+      }
+  }
+}
